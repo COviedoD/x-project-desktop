@@ -40,11 +40,13 @@ Public Class frmlogin
         ReleaseCapture()
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
 
-        frmregistrar.Show()
-        Me.Hide()
-    End Sub
+
+    'Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+
+    '    frmregistrar.Show()
+    '    Me.Hide()
+    'End Sub
 #End Region
 
 
