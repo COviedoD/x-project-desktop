@@ -1,5 +1,8 @@
-﻿Imports MySql.Data.MySqlClient
+﻿
+Imports System.Data.SqlClient
 Imports System.Xml
+Imports MySql.Data.MySqlClient
+
 Module DB_Conecction
     Public myConnectionDB As MySqlConnection
 

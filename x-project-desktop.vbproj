@@ -153,6 +153,7 @@
     <Compile Include="Class Modules\clientes\Class3.vb" />
     <Compile Include="Class Modules\clientes\ClientesModule.vb" />
     <Compile Include="Class Modules\inventario\Class4.vb" />
+    <Compile Include="Class Modules\login\loginDAO.vb" />
     <Compile Include="Class Modules\tickets\ticketsDAO.vb" />
     <Compile Include="Class Modules\ventas\Class6.vb" />
     <Compile Include="Forms Modules\frmsAnaliticas\dashboard\frmDashboard.Designer.vb">
@@ -281,6 +282,18 @@
     <Compile Include="Forms Modules\frmsClientes\frmEditarUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms Modules\frmsLogin\frmlogin.Designer.vb">
+      <DependentUpon>frmlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Modules\frmsLogin\frmlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Modules\frmsLogin\frmregistrar.Designer.vb">
+      <DependentUpon>frmregistrar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Modules\frmsLogin\frmregistrar.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms Modules\frmsTickets\frmCrearTickets.Designer.vb">
       <DependentUpon>frmCrearTickets.vb</DependentUpon>
     </Compile>
@@ -319,6 +332,7 @@
     </Compile>
     <Compile Include="Interfaces Modules\analitica\analitycClienteInterfaces.vb" />
     <Compile Include="Interfaces Modules\analitica\analitycReporteInterfaces.vb" />
+    <Compile Include="Interfaces Modules\login\loginInterface.vb" />
     <Compile Include="Interfaces Modules\tickets\ticketsInterfaces.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -411,6 +425,12 @@
     <EmbeddedResource Include="Forms Modules\frmsClientes\frmEditarUsuario.resx">
       <DependentUpon>frmEditarUsuario.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms Modules\frmsLogin\frmlogin.resx">
+      <DependentUpon>frmlogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Modules\frmsLogin\frmregistrar.resx">
+      <DependentUpon>frmregistrar.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms Modules\frmsTickets\frmCrearTickets.resx">
       <DependentUpon>frmCrearTickets.vb</DependentUpon>
     </EmbeddedResource>
@@ -464,6 +484,7 @@
     <Content Include="Database Scripts\dataset\ScriptDataSet.sql" />
     <Content Include="Resources\dataConfig.xml" />
     <Content Include="Store Procedures\Analitica-Reportes\StoredProceduresReportes.sql" />
+    <Content Include="Store Procedures\login\StoredProceduresLogin.sql" />
     <Content Include="Store Procedures\tickets\StoredProceduresTickets.sql" />
     <None Include="Resources\logo.png" />
   </ItemGroup>
